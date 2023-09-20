@@ -33,7 +33,7 @@ IPCAS2023014_Lijuan_part_7_task4.nii
 IPCAS2023014_Lijuan_part_8_task5.nii
 IPCAS2023014_Lijuan_part_9_task6.nii
    
-2. turn the MST file into a .csv file
+1. turn the MST file into a .csv file
    When a participant completed his/her/you-know-who's exp, the psychopy programm would generate a MST_ID.txt
    open the file, you will see such sentences:
 
