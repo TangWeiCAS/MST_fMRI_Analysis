@@ -85,3 +85,21 @@ ONSET	DURATION	TRIAL_TYPE
   Also, if you expect to do gPPI, just move the .tsv files into ..\sub-xx\func\
 
 Thanks for focusing on our exp!
+
+
+
+#2023.10.1 update 1
+
+Happy birthday to our great PRC! Glad to contribute to the the domain of Cognitive Neuroscience in China.
+Here is the whole pre-processing procedure code and how to use it:
+% Firstly, check reg and make sure that all the anat (part 6) and func (part 3-5, 7-9) have the same origin, which locates at AC. If not, reorient them. It will cost you 5 mins.
+% Secondly, copy the 'run1stlevel.m' and paste it in a .docx file. search and replace all the ID (number 90xx) in the code. i.e., the uploaded file focuses on 9009, you may replace it with 9010.
+% Thirdly, copy the revised codes and paste it in 'run1stlevel.m'. SPM fmri-batch-load file-'run1stlevel.m'-Run it.
+   slice timing: 37 slices, TR = 2, TA = 1.9459, order (top-down interleaved) = {37:-2:1 36:-2:1}, reference = 19
+   realign (Est & Res): quality = 0.9, FWHM = 5, resliced = All+mean
+   coregistration (Est & Res): same as Andy's Brain Book
+   segment: save bias corrected, east asian template, deformation fields = forward
+   normalization (write): voxel [2 2 2], default bounding [-78 -112 -50; 78 76 85] (Yan's DPABI bounding [-90 -126 -72; 90 90 108] is also suitable)
+   smooth: FWHM = [6 6 6]. According to previous literature, 3.5*(1.5-2.5) is the best range for smoothing, so [5 5 5], [7 7 7], especially [8 8 8] are proper alternatives.
+apparently, we didn't use fieldmap to correct the loss of PFC fMRI. if you want to try, choose 'realign and unwrap' then follow this site's guideline: https://www.fil.ion.ucl.ac.uk/spm/toolbox/fieldmap/
+% Finally, after the 'run1stlevel.m' ends, run 'est1stlevel.m' and get the matrix construction code, run it in batch. Note: you should have run 'condsplit.m' and 'txt2tsv.R' and got 6 events.tsv files before this step!
