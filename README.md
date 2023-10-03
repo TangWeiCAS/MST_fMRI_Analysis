@@ -106,4 +106,4 @@ Here is the whole pre-processing procedure code and how to use it:
    
 apparently, we didn't use fieldmap to correct the loss of PFC fMRI. if you want to try, choose 'realign and unwrap' then follow this site's guideline: https://www.fil.ion.ucl.ac.uk/spm/toolbox/fieldmap/
 
-4. Finally, after the 'run1stlevel.m' ends, run 'est1stlevel.m' and get the matrix construction code, run it in batch. Note: you should have run 'condsplit.m' and 'txt2tsv.R' and got 6 events.tsv files before this step!
+4. Finally, after the 'run1stlevel.m' ends, run 'matrixbulider.m' and get codes for this subject. Copy the codes to replace the old codes in 'est1stlevel.m' and get the matrix construction code, run it in batch. Note: you should have run 'condsplit.m' and 'txt2tsv.R' and got 6 events.tsv files before this step!
