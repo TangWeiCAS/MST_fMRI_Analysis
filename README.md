@@ -84,4 +84,9 @@ ONSET	DURATION	TRIAL_TYPE
   When you want to design the matrix, just open a blank excel and paste each run's .tsv in it. Sort function in excel would help a lot in writing the onsets and condition names.
   Also, if you expect to do gPPI, just move the .tsv files into ..\sub-xx\func\
 
-Thanks for focusing on our exp!
+# Some personal thoughts
+Thanks for focusing on our work! We do hope that this work could open up new pathways to understanding the underlying mechanisms of SCD patients for all clinicians!
+Also, the MATLAB codes could be downloaded and adopted to deal with MVPA (using SPM12). What a surprise we didn't expect at all.
+
+Please cite us in AMA format:
+Tang W, Zeng Q, Xie K, et al. Disrupted brain networks underlying high-fidelity memory retrieval in subjective cognitive decline: A task-based fMRI study. Alzheimer's Dement. 2024; 1-13. https://doi.org/10.1002/alz.14431
