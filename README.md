@@ -90,3 +90,4 @@ Also, the MATLAB codes could be downloaded and adopted to deal with MVPA (using 
 
 Please cite us in AMA format:
 Tang W, Zeng Q, Xie K, et al. Disrupted brain networks underlying high-fidelity memory retrieval in subjective cognitive decline: A task-based fMRI study. Alzheimer's Dement. 2024; 1-13. https://doi.org/10.1002/alz.14431
+![image](https://github.com/user-attachments/assets/f60af9cc-e71a-4c69-8866-705c5424c1cb)
